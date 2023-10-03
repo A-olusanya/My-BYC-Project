@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <title>BYC</title>
+</head>
+<body>
+
+ <section class="AllNav">
+     <!-- large view -->
+    <div class="navl fixed-top">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-1"></div>
+        <div class="col-sm-12 col-md-12 col-lg-10">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto myUnderListed">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Shop Products <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">FAQ <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <img src="./Asset/BYC LOGO JPG FILE 1.png" alt="" class="mt-2 byclogo">
+              <div class="form-group has-search mt-3">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active mr-3">
+                  <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active si" onclick="showSearch(event)">
+                  <img src="./Asset/ant-design_search-outlined.png" alt="" class="navimg mr-3">
+                </li>
+                <li class="nav-item active">
+                  <img src="./Asset/ant-design_user-outlined.png" alt="" class="navimg mr-3">
+                </li>
+                <li class="nav-item active">
+                  <img src="./Asset/akar-icons_heart.png" alt="" class="navimg mr-3">
+                </li>
+                <li class="nav-item active">
+                  <img src="./Asset/ant-design_shopping-cart-outlined.png" alt="" class="navimg">
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      </div>
+    </div>
+    <!-- mobile view -->
+    <div class="navs">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-1"></div>
+        <div class="col-sm-12 col-md-12 col-lg-10">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+              <img src="./Asset/BYC LOGO JPG FILE 1.png" alt="" class="mt-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars fa-bounce" style="color: #000000;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Shop Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">FAQ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+                </li>
+                <div class="d-flex">
+                  <li class="nav-item active">
+                    <img src="./Asset/ant-design_search-outlined.png" alt="" class="navimg mr-3">
+                  </li>
+                  <li class="nav-item active">
+                    <img src="./Asset/ant-design_user-outlined.png" alt="" class="navimg mr-3">
+                  </li>
+                  <li class="nav-item active">
+                    <img src="./Asset/akar-icons_heart.png" alt="" class="navimg mr-3">
+                  </li>
+                  <li class="nav-item active">
+                    <img src="./Asset/ant-design_shopping-cart-outlined.png" alt="" class="navimg">
+                  </li>
+                </div>
+                
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      </div>
+    </div>
+ </section>
+
+  <section class="First-Sec">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10">
+        <div class="First-group">
+          <h3 class="yourbody-subsec">Your body deserves comfort</h3>
+          <h2 class="get-the-best">Get the best for <span id="changingText">Yourself</span></h2>
+        </div>
+        <div class="ShopAndLearn-btn">
+          <button class="shopnow-btn">Shop Now</button>
+          <button class="learnmore-btn">Learn more</button>
+        </div>
+        <div class="group-model">
+          <img src="./Asset/Frame 180.png" alt="" class="first-model">
+          <img src="./Asset/Frame 179.png" alt="" class="middle-model">
+          <img src="./Asset/Frame 181.png" alt="" class="third-model">
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+    </div>
+  </section>
+
+  <section class="Second-Sec">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10">
+        <div>
+          <h2 class="check-out">Checkout BYC New Arrivals</h3>
+        </div>
+        <div class="row groupUnderwear">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <img src="./Asset/Frame 42.png" alt="">
+            <h3>Men Underwears</h3>
+            <h4>Parturient Venenatis Etiam</h4>
+          </div>
+          
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <img src="./Asset/Frame 41.png" alt="">
+            <h3>Women Underwears</h3>
+            <h4>Parturient Venenatis Etiam</h4>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <img src="./Asset/Frame 34.png" alt="">
+            <h3>Underwears</h3>
+            <h4>Parturient Venenatis Etiam</h4>
+          </div>
+        </div>
+        <div class="sec-btn">
+          <button class="viewall-btn">View all</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+    </div>
+  </section>
+
+  <section class="Third-sec">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 byc-collection-group">
+              <h3 class="byc-collction-num">BYC Collection 2021</h3>
+              <h1 class="byc-collction">BYC Collection</h1>
+              <p>The best everyday option in a Super Saver range within a<br> 
+                reasonable price. It is our responsibility to keep you<br> 
+                100 percent stylish. Be smart & trendy with us.
+              </p>
+              <button class="explore-btn">Explore</button>
+            </div>
+              
+            <div class="col-sm-12 col-md-12 col-lg-6 group-kids">
+              <img src="./Asset/Frame 166.png" alt="" class="kids-img">
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+    </div>
+  </section>
+
+    
+  <section class= "Forth-sec">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10">
+        <div class="row forthgroup.sec">
+          <div class="col-sm-12 col-md-12 col-lg-6 forthgroup-model">
+            <img src="./Asset/Frame 167.png" alt="" class="forthsec-model">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 forthgroup-model2">
+            <img src="./Asset/Frame 168.png" alt="" class="forthsec-modelTwo">
+          </div>
+        </div>
+        <div class="forth-btn">
+          <button class="viewall-btn">View all</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+    </div>
+  </section>
+
+  <section class="fifth-section">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-1o">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-3"></div>
+          <div class="col-sm-12 col-md-12 col-lg-6 fifth-subsection">
+            
+            <div class="shop-sec">
+              <h1>Shop By Category</h1>
+            </div>
+            <div class="for-gender">
+              <p class="for-Women">For Women</p>
+              <p class="for-Men">For Men</p>
+              <p class="for-Kids">For Kids</p>
+            </div>
+            <div class="for-underwears">
+              <p class="t-shirt">T-Shirt</p>
+              <p class="singlet">Singlet</p>
+              <p class="pants">Pants</p>
+              <p class="boxers">Boxers</p>
+            </div>   
+            
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-3"></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+    </div>
+
+  </section>
+
+  <!-- <section class="sixth-section">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10">
+        
+        <div class="group-underwears">
+          <img src="./Asset/arrow-left.png" class="arrow arrow-left" alt="">
+          <div class="white-pants">
+            <img src="./Asset/white pant.png" class="arrow arrow-left" alt="">
+            <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+            <h3>₦2,800.00</h3>
+          </div>
+          <div class="black-pants">
+            <img src="./Asset/black pant.png" alt="">
+            <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+            <h3>₦2,800.00</h3>
+          </div>
+          <div class="white-boxers">
+            <img src="./Asset/white boxers.png" alt="">
+            <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+            <h3>₦2,800.00</h3>
+          </div>
+          <img src="./Asset/arrow-right.png" class="arrow arrow-right" alt="">
+        </div>
+      
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+    </div>
+  </section> -->
+
+  <section class="sixth-section">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10">
+        <div class="group-underwears">
+          <img src="./Asset/arrow-left.png" class="arrow arrow-left" alt="">
+          <div class="image-slider">
+            <div class="white-pants">
+              <img src="./Asset/white pant.png" alt="">
+              <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+              <h3>₦2,800.00</h3>
+            </div>
+            <div class="black-pants">
+              <img src="./Asset/black pant.png" alt="">
+              <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+              <h3>₦2,800.00</h3>
+            </div>
+            <div class="white-boxers">
+              <img src="./Asset/white boxers.png" alt="">
+              <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+              <h3>₦2,800.00</h3>
+            </div>
+            <div class="white-pants">
+              <img src="./Asset/white pant.png" alt="">
+              <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+              <h3>₦2,800.00</h3>
+            </div>
+            <div class="black-pants">
+              <img src="./Asset/black pant.png" alt="">
+              <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+              <h3>₦2,800.00</h3>
+            </div>
+            <div class="white-boxers">
+              <img src="./Asset/white boxers.png" alt="">
+              <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+              <h3>₦2,800.00</h3>
+            </div>
+            <div class="white-pants">
+              <img src="./Asset/white pant.png" alt="">
+              <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+              <h3>₦2,800.00</h3>
+            </div>
+            <div class="black-pants">
+              <img src="./Asset/black pant.png" alt="">
+              <h3>WOWEN PANTS <span>BYC-501LMS</span></h3>
+              <h3>₦2,800.00</h3>
+            </div>
+
+            <!-- Add more item divs as needed -->
+          </div>
+          <img src="./Asset/arrow-right.png" class="arrow arrow-right" alt="">
+        </div>
+        <div class="sixSec-btn">
+          <button class="viewall-btn">View all</button>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+    </div>
+  </section>
+
+
+  <section class="seveth-sec">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10">
+        <div class="byc-sixSec text-center">
+          <h1>BYC AFRICA Blog News</h1>
+        </div>
+          <div class="card-deck">
+            <div class="card">
+              <img src="./Asset/Frame 169.png" class="card-img-top" alt="...">
+              <div class="blog-body">
+                <div class="author-views ">
+                  <img class="image" src="./Asset/small card img.png" />
+                  <div class="views-likes-shares">
+                    <div class="viewslikes-sub-sec">
+                      <img class="view" src="./Asset/eye small card View.png" />
+                      <div class="likes-num">35</div>
+                    </div>
+                    <div class="viewslikes-sub-sec">
+                      <img class="like" src="./Asset/small love Like.png" />
+                      <div class="likes-num">23</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="name-position mt-2">
+                  <h6 class="Myname">Wade Warren</h6>
+                  <h6 class="Myposition">Fashion Designer</h6>
+                </div>
+                <h4 class="card-head-title">How important are clothes<br> 
+                  in your style?
+                </h4>
+                <p class="card-text summary-to-title">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="link-button">
+                  <div class="btn-text">Read more</div>
+                  <img class="link-arrow" src="./Asset/link-Arrow.png" />
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Asset/Frame 169(2).png" class="card-img-top" alt="...">
+              <div class="blog-body">
+                <div class="author-views ">
+                  <img class="image" src="./Asset/small card img.png" />
+                  <div class="views-likes-shares">
+                    <div class="viewslikes-sub-sec">
+                      <img class="view" src="./Asset/eye small card View.png" />
+                      <div class="likes-num">35</div>
+                    </div>
+                    <div class="viewslikes-sub-sec">
+                      <img class="like" src="./Asset/small love Like.png" />
+                      <div class="likes-num">23</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="name-position mt-2">
+                  <h6 class="Myname">Wade Warren</h6>
+                  <h6 class="Myposition">Fashion Designer</h6>
+                </div>
+                <h4 class="card-head-title">How important are clothes<br> 
+                  in your style?
+                </h4>
+                <p class="card-text summary-to-title">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="link-button">
+                  <div class="btn-text">Read more</div>
+                  <img class="link-arrow" src="./Asset/link-Arrow.png" />
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Asset/Frame 169(3).png" class="card-img-top" alt="...">
+              <div class="blog-body">
+                <div class="author-views ">
+                  <img class="image" src="./Asset/small card img.png" />
+                  <div class="views-likes-shares">
+                    <div class="viewslikes-sub-sec">
+                      <img class="view" src="./Asset/eye small card View.png" />
+                      <div class="likes-num">35</div>
+                    </div>
+                    <div class="viewslikes-sub-sec">
+                      <img class="like" src="./Asset/small love Like.png" />
+                      <div class="likes-num">23</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="name-position mt-2">
+                  <h6 class="Myname">Wade Warren</h6>
+                  <h6 class="Myposition">Fashion Designer</h6>
+                </div>
+                <h4 class="card-head-title">How important are clothes<br> 
+                  in your style?
+                </h4>
+                <p class="card-text summary-to-title">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="link-button">
+                  <div class="btn-text">Read more</div>
+                  <img class="link-arrow" src="./Asset/link-Arrow.png" />
+                </button>
+              </div>
+            </div>
+          </div>
+        <div class="sevenSec-btn">
+          <button class="viewall-btn">View all</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+    </div>
+  </section>
+
+
+  <footer class="footer-section">
+    <div class="row footer-page">
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                          <h6>Company Info</h6>
+                          <p>About Us</p>
+                          <p>Affliate</p>
+                          <p>Fashion Blogger</p>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                          <h6>Help & Support</h6>
+                          <p>Shipping Info</p>
+                          <p>Refunds</p>
+                          <p>How to Order</p>
+                          <p>How to Track</p>
+                          <p>Size Guides</p>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-4">
+                          <h6>Customer Care</h6>
+                          <p>Contact Us</p>
+                          <p>Payment Methods</p>
+                          <div>
+                            <img src="./Asset/PayPal.png" alt="">
+                            <img src="./Asset/Visa.png" alt="">
+                            <img src="./Asset/MasterCard.png" alt="">
+                          </div>
+                      </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2"></div>
+          <div class="col-sm-12 col-md-12 col-lg-4 company-contact">
+            <h6>Signup For The Latest News</h6>
+            <div class="form-email">
+              <form action="">
+                <input type="email" placeholder="Enter Email" name="email">
+                <img src="./Asset/Arrow.png" alt="" class="arrow">
+              </form>
+            </div>
+            <div class="mail">
+              <img src="./assets/Mail.png" alt="">
+              <p>bycafrica@gmail.com </p>
+            </div>
+            <div class="phone">
+              <img src="./assets/Phone.png" alt="">
+              <p>+2348101375376 ; +2349053403403 </p>
+            </div>
+          </div>
+        </div>
+        <div class=" social-media">
+          <img src="./Asset/facebook.png" alt="">
+          <img src="./Asset/instagram.png" alt="">
+          <img src="./Asset/twitter.png" alt="">
+          <img src="./Asset/youtube.png" alt="">
+          <div>
+            <p>All rights Reserved  copyright bycafrica 2021.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1"></div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/245131dc5e.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js" integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
